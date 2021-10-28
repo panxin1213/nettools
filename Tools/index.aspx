@@ -10,6 +10,7 @@
 <body>
     <form id="form1" runat="server" method="post" enctype="multipart/form-data">
         <div>
+            <input type="text" name="type" value="xls" />
             <input type="file" name="file" />
             <input type="submit" value="提交" />
         </div>
