@@ -50,6 +50,10 @@
     <Reference Include="Aspose.Words">
       <HintPath>..\..\..\Common\packages\Aspose\Aspose.Words.dll</HintPath>
     </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Common\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Speech" />
     <Reference Include="System.Web.DynamicData" />
@@ -73,8 +77,9 @@
   <ItemGroup>
     <Content Include="audio.aspx" />
     <Content Include="audiotype.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="index.aspx" />
-    <Content Include="static\tDiy.wav" />
+    <Content Include="phonetest.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -92,12 +97,22 @@
     <Compile Include="audiotype.aspx.designer.cs">
       <DependentUpon>audiotype.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="phonetest.aspx.cs">
+      <DependentUpon>phonetest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="phonetest.aspx.designer.cs">
+      <DependentUpon>phonetest.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -114,6 +129,9 @@
       <Project>{d3244527-1fea-438c-8528-a1e45d151a7c}</Project>
       <Name>Common.Library</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="static\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

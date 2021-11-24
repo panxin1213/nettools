@@ -1,3 +1,4 @@
 *.suo
 Tools/bin/
 Tools/obj/
+Tools/logs/
